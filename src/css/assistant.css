@@ -70,13 +70,13 @@
 .ai-layout {
   flex: 1;
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr) var(--preview-w, 340px);
+  grid-template-columns: 300px minmax(0, 1fr) 6px var(--preview-w, 340px);
   gap: 0;
   width: 100%;
   transition: grid-template-columns .25s ease;
 }
 .ai-layout.preview-hidden {
-  grid-template-columns: 300px minmax(0, 1fr) 0px;
+  grid-template-columns: 300px minmax(0, 1fr) 0px 0px;
 }
 
 .ai-panel-left {
@@ -273,9 +273,11 @@
   border: none;
 }
 
-/* ── QUICK-NAV PILL ROW (floats above input bar) ── */
+/* ── QUICK-NAV PILL ROW (floats above input bar, centered) ── */
 .ai-quicknav {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 10px 28px 0;
   overflow-x: auto;
