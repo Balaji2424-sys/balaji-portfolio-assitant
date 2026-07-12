@@ -1,6 +1,8 @@
 {
   "_comment": "Whitelist of every action identifier the assistant may return. actions.js rejects anything not listed here — this is the primary prompt-injection / arbitrary-action defense described in the Function Calling spec §11.",
 
+  "SHOW_PROFILE_CARD":         { "handler": "renderCard",   "cardType": "profile" },
+
   "OPEN_LINKEDIN":            { "handler": "openLink",     "targetSource": "links" },
   "OPEN_GITHUB":               { "handler": "openLink",     "targetSource": "links" },
   "OPEN_PORTFOLIO":            { "handler": "openLink",     "targetSource": "links" },

@@ -13,6 +13,7 @@
 
   function init() {
     global.APAI.ui.initTheme();
+    global.APAI.ui.initPreviewPanel();
 
     // Greeting is the first assistant message, sourced from config/ui.json
     // rather than hardcoded, so it can change without touching app.js.

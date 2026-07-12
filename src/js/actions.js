@@ -43,6 +43,16 @@
     },
     openPdfViewer(action) {
       if (!action.target) return notifyUnavailable(action);
+      // Show a compact inline preview in the right panel immediately,
+      // AND open the full PDF.js modal for zoom/page navigation —
+      // matches the "the preview panel should actually show what I
+      // asked to view" feedback, rather than only opening a modal.
+      global.APAI.renderer.renderDocumentPreview(action.target, action.label);
+      global.APAI.pdfViewer.open(action.target, action.label);
+    },
+    // Used by the "Expand ↗" button inside an inline doc preview —
+    // just opens the full modal viewer for a target already on screen.
+    __EXPAND_DOC__(action) {
       global.APAI.pdfViewer.open(action.target, action.label);
     },
     openGallery(action) {
@@ -78,6 +88,11 @@
    * @param {{type: string, label?: string, target?: string, [k: string]: any}} action
    */
   async function dispatch(action) {
+    if (action.type === '__EXPAND_DOC__') {
+      handlers.__EXPAND_DOC__(action);
+      return;
+    }
+
     const reg = await loadRegistry();
     const entry = reg[action.type];
 
@@ -109,6 +124,27 @@
       await dispatch(action);
     }
   }
+
+  /**
+   * Global delegated listener for buttons rendered by renderer.js inside
+   * cards (project Live Demo/GitHub, cert View/Download, the inline-preview
+   * Expand button, etc). Those buttons carry data-action-type / data-target
+   * attributes with values already resolved server-side into the card
+   * payload — this just turns a click into the same dispatch() path the
+   * message-level action buttons use, so there's one execution boundary.
+   */
+  function wireDelegatedClicks() {
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-action-type]');
+      if (!btn) return;
+      dispatch({
+        type: btn.dataset.actionType,
+        label: btn.dataset.label || btn.textContent.trim(),
+        target: btn.dataset.target,
+      });
+    });
+  }
+  wireDelegatedClicks();
 
   global.APAI = global.APAI || {};
   global.APAI.actions = { dispatch, dispatchAll, loadRegistry };

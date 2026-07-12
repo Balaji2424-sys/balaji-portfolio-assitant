@@ -22,29 +22,29 @@
 
   <div class="ai-shell">
 
-    <!-- ========== HEADER ========== -->
+    <!-- ========== HEADER (slim) ========== -->
     <header class="ai-header">
       <a href="index.html" class="ai-back-link" id="backToPortfolio">
-        &#8592; Back to Portfolio
+        &#8592; Portfolio
       </a>
-      <div class="ai-header-title">
-        <span class="dot"></span>
-        Balaji's AI Assistant
+      <div class="ai-header-right">
+        <button class="ai-icon-btn active" id="previewToggle" aria-label="Toggle preview panel" title="Toggle preview panel">
+          &#9636;
+        </button>
+        <button class="theme-toggle ai-icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
       </div>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="icon-sun">&#9728;</span>
-        <span class="icon-moon">&#9790;</span>
-      </button>
     </header>
 
     <!-- ========== THREE-PANEL LAYOUT ========== -->
-    <div class="ai-layout">
+    <div class="ai-layout" id="aiLayout">
 
       <!-- LEFT: suggested questions / quick nav -->
       <aside class="ai-panel-left" id="panelLeft">
         <div class="ai-panel-heading">Ask me about</div>
         <div id="suggestedChips">
-          <!-- Populated by ui.js from config/ui.json quick-questions -->
           <button class="ai-chip" data-question="Tell me about yourself">Tell me about yourself</button>
           <button class="ai-chip" data-question="Show me your projects">My projects</button>
           <button class="ai-chip" data-question="What is your education background?">Education</button>
@@ -57,25 +57,48 @@
 
       <!-- CENTER: conversation -->
       <main class="ai-conversation">
+
+        <div class="ai-floating-avatar">
+          <img src="assets/11.png" alt="Balaji Parasuraman" />
+          <div class="name">Balaji Parasuraman</div>
+          <div class="tagline">AI &amp; Data Science Engineer</div>
+        </div>
+
         <div class="ai-messages" id="messages" aria-live="polite">
           <!-- Messages injected here by chat.js / ui.js -->
         </div>
 
+        <nav class="ai-quicknav" id="quickNav">
+          <button class="ai-quicknav-pill" data-question="Tell me about yourself">&#128100; Me</button>
+          <button class="ai-quicknav-pill" data-question="Show me your projects">&#128188; Projects</button>
+          <button class="ai-quicknav-pill" data-question="Tell me about your experience and internships">&#128196; Experience</button>
+          <button class="ai-quicknav-pill" data-question="What are your skills?">&#10024; Skills</button>
+          <button class="ai-quicknav-pill" data-question="How can I contact you?">&#9993; Contact</button>
+        </nav>
+
         <form class="ai-input-bar" id="chatForm">
-          <textarea
-            class="ai-input"
-            id="chatInput"
-            rows="1"
-            placeholder="Ask me anything about my work, education, or experience..."
-            aria-label="Message"
-          ></textarea>
-          <button type="submit" class="ai-send-btn" id="sendBtn">Send</button>
+          <div class="ai-input-pill">
+            <textarea
+              class="ai-input"
+              id="chatInput"
+              rows="1"
+              placeholder="Ask me anything..."
+              aria-label="Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="ai-send-btn" id="sendBtn" aria-label="Send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
         </form>
       </main>
 
-      <!-- RIGHT: rich card / gallery / PDF preview -->
+      <!-- RIGHT: rich card / gallery / PDF preview (resizable + closable) -->
+      <div class="ai-resizer" id="panelResizer"></div>
       <aside class="ai-panel-right" id="panelRight">
-        <div class="ai-panel-heading">Preview</div>
+        <div class="ai-panel-right-header">
+          <div class="ai-panel-heading">Preview</div>
+          <button class="ai-icon-btn" id="panelRightClose" aria-label="Close preview panel" title="Close preview panel">&times;</button>
+        </div>
         <div id="previewSlot">
           <p class="ai-empty-preview">
             Project cards, certificates, and documents I mention will preview here.

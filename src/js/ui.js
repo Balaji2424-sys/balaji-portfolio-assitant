@@ -119,11 +119,79 @@
     setTimeout(() => toast.remove(), 3200);
   }
 
-  // ── SUGGESTED CHIPS ──────────────────────────────────────────
+  // ── SUGGESTED CHIPS + QUICK-NAV PILLS ────────────────────────
   function wireChips(onSelect) {
-    document.querySelectorAll('.ai-chip[data-question]').forEach((chip) => {
+    document.querySelectorAll('.ai-chip[data-question], .ai-quicknav-pill[data-question]').forEach((chip) => {
       chip.addEventListener('click', () => onSelect(chip.dataset.question));
     });
+  }
+
+  // ── PREVIEW PANEL (resizable + closable) ─────────────────────
+  const MIN_PANEL_WIDTH = 260;
+  const MAX_PANEL_WIDTH = 560;
+
+  function openPreviewPanel() {
+    const layout = document.getElementById('aiLayout');
+    const toggle = document.getElementById('previewToggle');
+    layout?.classList.remove('preview-hidden');
+    toggle?.classList.add('active');
+  }
+
+  function closePreviewPanel() {
+    const layout = document.getElementById('aiLayout');
+    const toggle = document.getElementById('previewToggle');
+    layout?.classList.add('preview-hidden');
+    toggle?.classList.remove('active');
+  }
+
+  function togglePreviewPanel() {
+    const layout = document.getElementById('aiLayout');
+    if (layout?.classList.contains('preview-hidden')) {
+      openPreviewPanel();
+    } else {
+      closePreviewPanel();
+    }
+  }
+
+  function initPreviewPanel() {
+    document.getElementById('previewToggle')?.addEventListener('click', togglePreviewPanel);
+    document.getElementById('panelRightClose')?.addEventListener('click', closePreviewPanel);
+
+    const resizer = document.getElementById('panelResizer');
+    const layout = document.getElementById('aiLayout');
+    if (!resizer || !layout) return;
+
+    let dragging = false;
+
+    const onMove = (clientX) => {
+      const layoutRect = layout.getBoundingClientRect();
+      let newWidth = layoutRect.right - clientX;
+      newWidth = Math.max(MIN_PANEL_WIDTH, Math.min(MAX_PANEL_WIDTH, newWidth));
+      layout.style.setProperty('--preview-w', `${newWidth}px`);
+    };
+
+    resizer.addEventListener('mousedown', (e) => {
+      dragging = true;
+      resizer.classList.add('dragging');
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      onMove(e.clientX);
+    });
+    document.addEventListener('mouseup', () => {
+      if (!dragging) return;
+      dragging = false;
+      resizer.classList.remove('dragging');
+    });
+
+    // Touch support for tablets
+    resizer.addEventListener('touchstart', () => { dragging = true; resizer.classList.add('dragging'); });
+    document.addEventListener('touchmove', (e) => {
+      if (!dragging || !e.touches[0]) return;
+      onMove(e.touches[0].clientX);
+    });
+    document.addEventListener('touchend', () => { dragging = false; resizer.classList.remove('dragging'); });
   }
 
   global.APAI = global.APAI || {};
@@ -135,5 +203,9 @@
     hideTyping,
     showToast,
     wireChips,
+    initPreviewPanel,
+    openPreviewPanel,
+    closePreviewPanel,
+    togglePreviewPanel,
   };
 })(window);

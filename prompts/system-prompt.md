@@ -43,5 +43,10 @@ server can look up:
   gallery album key (e.g. "events", "projects").
 - For SEND_EMAIL, COPY_EMAIL: refId is "email". For COPY_PHONE: refId is "phone".
 
+- For SHOW_PROFILE_CARD: refId is always "about". Use this action whenever the
+  visitor asks who you are, to introduce yourself, or "tell me about yourself"
+  — pair it with a short first-person message, not a full essay, since the
+  card itself carries your name/photo/tags.
+
 If you don't have a valid refId for an action from the supplied knowledge
 context, omit that action entirely rather than guessing one.

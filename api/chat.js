@@ -159,6 +159,10 @@ function loadProjectMetadata(slug) {
   return readJSONSafe(p, null);
 }
 
+function loadAboutMetadata() {
+  return readJSONSafe(path.join(KNOWLEDGE_DIR, 'about', 'metadata.json'), null);
+}
+
 /**
  * Resolves a sanitized action's real target from the knowledge registries,
  * using the refId the model supplied. The model never sees or invents a
@@ -223,12 +227,15 @@ function sanitizeActions(actions) {
     const out = { type: a.type, label: a.label || a.type };
 
     if (entry.handler === 'renderCard') {
-      // Card payload comes from the project/cert/internship metadata itself,
-      // never from the model's own words.
-      const project = a.refId ? loadProjectMetadata(a.refId) : null;
-      if (!project) continue; // no valid ref — drop rather than render an empty card
+      let payload = null;
+      if (entry.cardType === 'profile') {
+        payload = loadAboutMetadata();
+      } else {
+        payload = a.refId ? loadProjectMetadata(a.refId) : null;
+      }
+      if (!payload) continue; // no valid ref — drop rather than render an empty card
       out.cardType = entry.cardType;
-      out.payload = project;
+      out.payload = payload;
     } else if (entry.handler === 'openGallery') {
       out.albumId = a.refId || null;
       if (!out.albumId) continue;
