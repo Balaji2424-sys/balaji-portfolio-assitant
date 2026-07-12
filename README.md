@@ -18,6 +18,14 @@ Built per the project's Software Design Specification — see `/knowledge`,
 - [ ] Still needed: your real `assets/` image folder (this zip has filenames referenced but not the binary images themselves — see note below)
 - [ ] Phase 6-7 — responsive QA pass, testing checklist run-through
 
+## UI Redesign (latest)
+
+- **Preview panel** is now closable (header toggle icon, or the × inside the panel) and resizable (drag the divider). When closed, the conversation expands to full width.
+- **Profile card** — asking "tell me about yourself" now renders a real profile card (your actual photo, name, tagline, highlight tags) instead of plain text alone.
+- **Project cards** — redesigned with full-bleed cover image, category tag, and an expandable "View More" that lazy-loads the project's `overview.md`.
+- **Quick-nav pills** (Me / Projects / Experience / Skills / Contact) sit above the input bar for one-tap common questions, alongside the wider left FAQ panel.
+- **Document previews** — actions like "View Resume" now show an inline preview (iframe) in the right panel immediately, in addition to the full PDF.js modal for zoom/page nav.
+
 ## Local development
 
 ```bash
