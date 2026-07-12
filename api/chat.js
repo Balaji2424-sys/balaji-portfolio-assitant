@@ -58,7 +58,7 @@ function loadPromptBundle() {
 // Extra synonyms beyond the literal route-intent keyword, so singular/plural
 // and common phrasing variants ("cv", "internship", "hire me") still match.
 const KEYWORD_ALIASES = {
-  about: ['yourself', 'who are you', 'introduce'],
+  about: ['yourself', 'who are you', 'introduce', 'favorite', 'proud', 'philosophy', 'grew up', 'hometown'],
   education: ['college', 'cgpa', 'degree', 'school', 'university'],
   skills: ['skill', 'tech stack', 'language', 'framework', 'know react', 'know python'],
   projects: ['project', 'built', 'app', 'demo'],
