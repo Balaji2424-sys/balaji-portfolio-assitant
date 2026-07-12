@@ -1,0 +1,18 @@
+{
+  "id": "waterbodies-leaflet-mapping",
+  "name": "Leaflet Geo Mapping Prototype",
+  "summary": "Experimental geospatial mapping project built while learning Leaflet, visualizing large-scale Andhra Pradesh water body datasets using GeoJSON bulk marker rendering techniques.",
+  "techStack": [
+    "JavaScript",
+    "Leaflet",
+    "GeoJSON",
+    "Open Street Maps"
+  ],
+  "github": "https://github.com/Balaji2424-sys/waterbodies-leaflet-mapping",
+  "demo": "https://balaji2424-sys.github.io/waterbodies-leaflet-mapping/",
+  "documents": [],
+  "images": [
+    "assets/7.png"
+  ],
+  "faq": []
+}

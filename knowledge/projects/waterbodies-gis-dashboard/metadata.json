@@ -1,0 +1,19 @@
+{
+  "id": "waterbodies-gis-dashboard",
+  "name": "Water Bodies GIS Intelligence Dashboard",
+  "summary": "Interactive GIS dashboard for visualizing and analyzing Andhra Pradesh water bodies using GeoJSON datasets, district-wise filtering, clustering, heatmaps, and optimized bulk marker rendering for large-scale spatial analytics.",
+  "techStack": [
+    "Leaflet",
+    "OpenStreetMap",
+    "OGD Datasets",
+    "GeoJSON",
+    "Heatmaps"
+  ],
+  "github": "https://github.com/Balaji2424-sys/waterbodies-gis-dashboard",
+  "demo": "https://balaji2424-sys.github.io/waterbodies-gis-dashboard/",
+  "documents": [],
+  "images": [
+    "assets/1.png"
+  ],
+  "faq": []
+}

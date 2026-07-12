@@ -1,0 +1,118 @@
+[
+  {
+    "id": "waterbodies-gis-dashboard",
+    "name": "Water Bodies GIS Intelligence Dashboard",
+    "tags": [
+      "Leaflet",
+      "OpenStreetMap",
+      "OGD Datasets",
+      "GeoJSON",
+      "Heatmaps"
+    ],
+    "path": "projects/waterbodies-gis-dashboard/"
+  },
+  {
+    "id": "llm-mcp-automation-assistant",
+    "name": "LLM MCP Automation Assistant",
+    "tags": [
+      "Groq Llama",
+      "MCP",
+      "GitHub API",
+      "Google Drive API",
+      "Python"
+    ],
+    "path": "projects/llm-mcp-automation-assistant/"
+  },
+  {
+    "id": "grievance-management-portal",
+    "name": "Transparent Grievance Management Portal",
+    "tags": [
+      "NodeJS",
+      "Firebase",
+      "JavaScript",
+      "Tracking System"
+    ],
+    "path": "projects/grievance-management-portal/"
+  },
+  {
+    "id": "drain-bhavishya",
+    "name": "Drain Bhavishya 1.0",
+    "tags": [
+      "React",
+      "UI/UX Design",
+      "Sustainability Analytics",
+      "Vercel"
+    ],
+    "path": "projects/drain-bhavishya/"
+  },
+  {
+    "id": "image-autoencoder-streamlit",
+    "name": "Image Compression Autoencoder",
+    "tags": [
+      "Python",
+      "Auto Encoder",
+      "TensorFlow",
+      "Streamlit",
+      "MNIST"
+    ],
+    "path": "projects/image-autoencoder-streamlit/"
+  },
+  {
+    "id": "denoiser-autoencoder-pca",
+    "name": "Denoising Autoencoder Performance Analysis",
+    "tags": [
+      "Python",
+      "Auto Encoder",
+      "TensorFlow",
+      "PCA",
+      "Statistical Analysis"
+    ],
+    "path": "projects/denoiser-autoencoder-pca/"
+  },
+  {
+    "id": "waterbodies-leaflet-mapping",
+    "name": "Leaflet Geo Mapping Prototype",
+    "tags": [
+      "JavaScript",
+      "Leaflet",
+      "GeoJSON",
+      "Open Street Maps"
+    ],
+    "path": "projects/waterbodies-leaflet-mapping/"
+  },
+  {
+    "id": "portfolio-website",
+    "name": "Interactive Developer Portfolio",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "path": "projects/portfolio-website/"
+  },
+  {
+    "id": "kaadhal-chronicles",
+    "name": "Kaadhal Chronicles",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Groq API",
+      "Llama 3"
+    ],
+    "path": "projects/kaadhal-chronicles/"
+  },
+  {
+    "id": "hostelos",
+    "name": "HostelOS",
+    "tags": [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "Groq API",
+      "Llama 3"
+    ],
+    "path": "projects/hostelos/"
+  }
+]

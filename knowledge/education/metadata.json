@@ -1,0 +1,30 @@
+{
+  "current": {
+    "institution": "Sri Sairam Institute of Technology",
+    "degree": "B.Tech, Artificial Intelligence & Data Science",
+    "department": "Artificial Intelligence and Data Science",
+    "location": "Chennai",
+    "year": "2024 – Present",
+    "cgpa": "8.7",
+    "semester": "4 Completed"
+  },
+  "history": [
+    {
+      "stage": "Higher Secondary (11th–12th)",
+      "institution": "John Dewey Matriculation Higher Secondary School",
+      "location": "Villupuram"
+    },
+    {
+      "stage": "Secondary (8th–10th)",
+      "institution": "Krishnaswamy Memorial Matriculation Higher Secondary School",
+      "location": "Cuddalore"
+    },
+    {
+      "stage": "Primary (Up to 7th)",
+      "institution": "E.S. Matriculation Higher Secondary School",
+      "location": "Villupuram"
+    }
+  ],
+  "documents": [],
+  "_note": "Subject-wise marksheets not yet supplied — documents array intentionally empty until provided. Do not fabricate marksheet documents."
+}

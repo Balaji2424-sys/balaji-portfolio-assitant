@@ -1,0 +1,31 @@
+{
+  "internships": [
+    {
+      "id": "acmegrade-web-dev-intern",
+      "role": "Web Development Intern",
+      "organization": "Acmegrade Private Limited, Bangalore (in collaboration with Wipro)",
+      "duration": "Jul 10 – Sep 15, 2025",
+      "responsibilities": [
+        "60-day intensive internship on real-world application development",
+        "Strengthened full-stack workflows through guided mentorship",
+        "Enhanced technical and project coordination skills in an industry setting"
+      ],
+      "offerLetter": null,
+      "certificate": null
+    },
+    {
+      "id": "sstf-rd-intern",
+      "role": "R&D Intern",
+      "organization": "Sri Sairam Techno Incubator Foundation, Chennai",
+      "duration": "Apr 06 – May 15, 2026",
+      "responsibilities": [
+        "30-working-day offline R&D internship",
+        "Built a GIS-based dashboard & analytical engine for water-sustainable landscape identification",
+        "Used MCP servers and LLM workflows, including a Groq LLM-powered chatbot automating GitHub repo + Google Drive folder creation"
+      ],
+      "offerLetter": null,
+      "certificate": null
+    }
+  ],
+  "_note": "offerLetter/certificate document paths intentionally null until real PDFs are supplied — do not fabricate."
+}

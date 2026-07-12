@@ -1,0 +1,10 @@
+{
+  "resume_latest": {
+    "title": "Resume — Balaji Parasuraman",
+    "category": "resume",
+    "path": "public/documents/resume/resume.pdf",
+    "thumbnail": null,
+    "downloadable": true
+  },
+  "_note": "Marksheet, certificate, and internship-letter documents are intentionally absent until real PDFs are supplied. VIEW_/DOWNLOAD_ actions for those should resolve to 'unavailable' rather than a fabricated path."
+}

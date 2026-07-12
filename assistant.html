@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant — Balaji Parasuraman</title>
+
+  <!-- Same font stack as the portfolio, loaded identically -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800;900&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Base portfolio theme (source of truth for tokens) -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Assistant-only layout, built entirely on top of the tokens above -->
+  <link rel="stylesheet" href="src/css/assistant.css" />
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <div class="ai-shell">
+
+    <!-- ========== HEADER ========== -->
+    <header class="ai-header">
+      <a href="index.html" class="ai-back-link" id="backToPortfolio">
+        &#8592; Back to Portfolio
+      </a>
+      <div class="ai-header-title">
+        <span class="dot"></span>
+        Balaji's AI Assistant
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">&#9728;</span>
+        <span class="icon-moon">&#9790;</span>
+      </button>
+    </header>
+
+    <!-- ========== THREE-PANEL LAYOUT ========== -->
+    <div class="ai-layout">
+
+      <!-- LEFT: suggested questions / quick nav -->
+      <aside class="ai-panel-left" id="panelLeft">
+        <div class="ai-panel-heading">Ask me about</div>
+        <div id="suggestedChips">
+          <!-- Populated by ui.js from config/ui.json quick-questions -->
+          <button class="ai-chip" data-question="Tell me about yourself">Tell me about yourself</button>
+          <button class="ai-chip" data-question="Show me your projects">My projects</button>
+          <button class="ai-chip" data-question="What is your education background?">Education</button>
+          <button class="ai-chip" data-question="What internships have you done?">Internships</button>
+          <button class="ai-chip" data-question="Tell me about your leadership experience">Leadership</button>
+          <button class="ai-chip" data-question="Can I see your resume?">Resume</button>
+          <button class="ai-chip" data-question="How can I contact you?">Contact</button>
+        </div>
+      </aside>
+
+      <!-- CENTER: conversation -->
+      <main class="ai-conversation">
+        <div class="ai-messages" id="messages" aria-live="polite">
+          <!-- Messages injected here by chat.js / ui.js -->
+        </div>
+
+        <form class="ai-input-bar" id="chatForm">
+          <textarea
+            class="ai-input"
+            id="chatInput"
+            rows="1"
+            placeholder="Ask me anything about my work, education, or experience..."
+            aria-label="Message"
+          ></textarea>
+          <button type="submit" class="ai-send-btn" id="sendBtn">Send</button>
+        </form>
+      </main>
+
+      <!-- RIGHT: rich card / gallery / PDF preview -->
+      <aside class="ai-panel-right" id="panelRight">
+        <div class="ai-panel-heading">Preview</div>
+        <div id="previewSlot">
+          <p class="ai-empty-preview">
+            Project cards, certificates, and documents I mention will preview here.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Modal mount points for PDF viewer / gallery lightbox -->
+  <div id="modalRoot"></div>
+
+  <!-- Module scripts — order matters: utils/markdown first, app.js last -->
+  <script src="src/js/utils.js"></script>
+  <script src="src/js/markdown.js"></script>
+  <script src="src/js/actions.js"></script>
+  <script src="src/js/renderer.js"></script>
+  <script src="src/js/gallery.js"></script>
+  <script src="src/js/pdfViewer.js"></script>
+  <script src="src/js/ui.js"></script>
+  <script src="src/js/chat.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>

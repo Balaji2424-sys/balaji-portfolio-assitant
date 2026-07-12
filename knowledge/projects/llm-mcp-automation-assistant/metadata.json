@@ -1,0 +1,19 @@
+{
+  "id": "llm-mcp-automation-assistant",
+  "name": "LLM MCP Automation Assistant",
+  "summary": "AI-powered automation assistant integrating Groq Llama models with GitHub and Google Drive MCPs to perform repository and file operations through natural language commands.",
+  "techStack": [
+    "Groq Llama",
+    "MCP",
+    "GitHub API",
+    "Google Drive API",
+    "Python"
+  ],
+  "github": "https://github.com/Balaji2424-sys/llm-mcp-demo",
+  "demo": "https://balaji2424-sys.github.io/llm-mcp-demo/",
+  "documents": [],
+  "images": [
+    "assets/2.png"
+  ],
+  "faq": []
+}

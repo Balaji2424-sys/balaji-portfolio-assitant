@@ -1,0 +1,17 @@
+{
+  "_comment": "Maps a coarse intent label to the knowledge/ subfolder(s) the retrieval step should load. Used by api/chat.js's classifier, not the browser.",
+  "about":          ["about"],
+  "education":      ["education"],
+  "skills":         ["skills"],
+  "projects":       ["projects"],
+  "internships":    ["internships", "experience"],
+  "experience":     ["experience", "internships"],
+  "leadership":     ["leadership", "events"],
+  "ieee":           ["ieee", "leadership"],
+  "events":         ["events", "leadership"],
+  "certifications": ["certifications"],
+  "achievements":   ["achievements"],
+  "contact":        ["contact", "links"],
+  "resume":         ["about", "metadata"],
+  "gallery":        ["gallery"]
+}

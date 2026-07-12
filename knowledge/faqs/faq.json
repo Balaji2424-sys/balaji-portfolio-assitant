@@ -1,0 +1,41 @@
+{
+  "Tell me about yourself": "about",
+  "What motivates you?": "about",
+  "What are your career goals?": "about",
+  "Where are you from?": "about",
+  "Why AI and Data Science?": "about",
+
+  "Which college do you attend?": "education",
+  "What is your CGPA?": "education",
+  "What is your education background?": "education",
+
+  "Which languages do you know?": "skills",
+  "Do you know Python?": "skills",
+  "Do you know React?": "skills",
+  "What is your tech stack?": "skills",
+
+  "What is your best project?": "projects",
+  "Show me your projects": "projects",
+  "Explain HostelOS": "projects",
+  "Tell me about the Water Bodies GIS Dashboard": "projects",
+  "Open the live demo": "projects",
+
+  "Where did you intern?": "internships",
+  "What were your responsibilities during your internship?": "internships",
+
+  "What leadership roles have you held?": "leadership",
+  "Which events did you organize?": "events",
+  "Describe your IEEE involvement": "ieee",
+
+  "List your certifications": "certifications",
+  "Do you have any awards?": "achievements",
+
+  "Open LinkedIn": "contact",
+  "Open GitHub": "contact",
+  "How can I contact you?": "contact",
+  "Can I see your resume?": "resume",
+  "Download my resume": "resume",
+
+  "Show me the gallery": "gallery",
+  "Show me event photos": "gallery"
+}

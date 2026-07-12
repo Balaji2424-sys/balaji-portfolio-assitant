@@ -1,0 +1,19 @@
+{
+  "id": "kaadhal-chronicles",
+  "name": "Kaadhal Chronicles",
+  "summary": "A curated cinematic sanctuary dedicated to love, life, dreams, passion, and unforgettable stories. Features AI-powered search, personalized recommendations, watchlists, and a Soul Analyzer that transforms viewing history into a personalized Soul Identity Card.",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Groq API",
+    "Llama 3"
+  ],
+  "github": "https://github.com/Balaji2424-sys/kaadhal-chronicles",
+  "demo": "https://kaadhal-chronicles.web.app/",
+  "documents": [],
+  "images": [
+    "assets/9.png"
+  ],
+  "faq": []
+}

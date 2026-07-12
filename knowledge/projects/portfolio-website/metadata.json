@@ -1,0 +1,17 @@
+{
+  "id": "portfolio-website",
+  "name": "Interactive Developer Portfolio",
+  "summary": "Responsive personal portfolio showcasing projects, leadership activities, downloadable resume, and contact information with smooth animations and modern UI design.",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "github": "https://github.com/Balaji2424-sys/balaji-parasuraman-portfolio",
+  "demo": null,
+  "documents": [],
+  "images": [
+    "assets/8.png"
+  ],
+  "faq": []
+}

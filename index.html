@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji Parasuraman — AI &amp; Data Science Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800;900&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Runs before the GitHub images below get a chance to fire onerror,
+    // so a broken external stats card never shows a blank/alt-text box.
+    function ghImgFallback(img, label) {
+      var card = img.closest('.github-card');
+      if (!card || card.classList.contains('github-card-empty')) return;
+      card.classList.add('github-card-empty');
+      card.innerHTML =
+        '<div class="github-fallback">' +
+          '<span>' + label + ' is temporarily unavailable</span>' +
+          '<a href="https://github.com/Balaji2424-sys" target="_blank" rel="noopener">View live on GitHub &#8594;</a>' +
+        '</div>';
+    }
+  </script>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="nav-logo">BP<span class="dot">.</span></a>
+
+      <div class="navbar-center">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assistant.html">AI Assistant</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="navMobile" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#github">GitHub</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assistant.html">AI Assistant</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-container">
+
+      <div class="hero-left">
+
+        <div class="hero-eyebrow animate-fade" style="--i:0">
+          <span class="badge">&#10022; Available for Opportunities</span>
+        </div>
+
+        <p class="hero-mini-title">AI &amp; Data Science Engineer</p>
+
+        <h1 class="hero-name animate-fade" style="--i:1">
+          Balaji <span class="gradient-text">Parasuraman</span>
+        </h1>
+
+        <p class="hero-description animate-fade" style="--i:2">
+          I build systems at the intersection of AI, automation, and full-stack
+          engineering - from LLM-powered chatbots to GIS dashboards - turning
+          data into decisions and ideas into shipped products.
+        </p>
+
+        <div class="hero-cta animate-fade" style="--i:3">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume</a>
+        </div>
+
+        <div class="hero-socials animate-fade" style="--i:4" aria-label="Social links">
+          <a href="https://github.com/Balaji2424-sys" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/balaji2424-sys/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:balajidivya810@gmail.com">Mail</a>
+        </div>
+      </div>
+
+      <div class="hero-right animate-fade" style="--i:1">
+        <div class="profile-wrapper" aria-label="Profile portrait">
+          <div class="profile-glow-ring"></div>
+          <div class="rotating-ring ring-dashed"></div>
+          <div class="rotating-ring ring-soft"></div>
+          <img src="assets/1111.png" alt="Balaji Parasuraman" class="hero-profile-img" />
+          <div class="floating-card floating-card-ai">
+            <span class="floating-icon">&#10022;</span>
+            <span><strong>Artificial Intelligence</strong><small>Deep Learning &amp; LLMs</small></span>
+          </div>
+          <div class="floating-card floating-card-gis">
+            <span class="floating-icon">&#9671;</span>
+            <span><strong>GIS Analytics</strong><small>Spatial Intelligence</small></span>
+          </div>
+          <div class="floating-card floating-card-stack">
+            <span class="floating-icon">&#123;</span>
+            <span><strong>Full Stack</strong><small>React &bull; Node &bull; PostgreSQL</small></span>
+          </div>
+          <div class="floating-card floating-card-auto">
+            <span class="floating-icon">&#9881;</span>
+            <span><strong>Automation</strong><small>MCP &bull; AI Agents</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 &mdash; About</div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-profile-card">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <img src="assets/11.png" alt="BP" class="profile-photo">
+            </div>
+            <div class="about-college">
+              <span class="college-label">Balaji Parasuraman</span>
+              <span class="college-name">AI &amp; Data Science Engineer</span>
+              <span class="college-role">AI &amp; GIS Developer</span>
+            </div>
+            <div class="about-card-stats">
+              <div><span>CGPA</span><strong>8.7 / 10</strong></div>
+              <div><span>Semester</span><strong>4 Completed</strong></div>
+              <div><span>Location</span><strong>Chennai, India</strong></div>
+              <div><span>Open To</span><strong>Internships &amp; Collaborations</strong></div>
+            </div>
+            <a href="resume.pdf" download class="btn btn-primary about-download">Download Resume</a>
+            <a href="https://docs.google.com/document/d/1wc0lVlyCQurxp9zxDXCGN8TbhYhLKLJv4JMxvGsgQE8/edit?tab=t.0"
+                target="_blank"
+                rel="noopener"
+                class="team-phoenix-card">
+              <span class="phoenix-label">TEAM PHOENIX</span>
+              <span class="phoenix-desc">View Our Team Compendium &#8599;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <h2 class="section-title">Building systems that think, scale, and matter.</h2>
+          <p>
+            I don&rsquo;t just write code — I build experiences that bridge intelligence and simplicity.
+            I&rsquo;m <strong>Balaji Parasuraman</strong>, an AI &amp; Data Science student at Sri Sairam
+            Institute of Technology (CGPA <strong>8.7</strong>, 4th semester), turning data into decisions
+            and shipping systems across AI, automation, LLMs, and full-stack software.
+          </p>
+
+          <div class="about-stats">
+            <div class="about-stat-chip"><span>8.7</span>CGPA · 4 Semesters</div>
+            <div class="about-stat-chip"><span>3+</span>Internships &amp; Programs</div>
+            <div class="about-stat-chip"><span>10+</span>Projects Shipped</div>
+          </div>
+
+          <div class="about-focus-tags">
+            <span>Artificial Intelligence</span>
+            <span>Automation Systems</span>
+            <span>LLMs</span>
+            <span>Full Stack Software</span>
+          </div>
+
+          <div class="about-roles">
+            <div class="role-item"><span class="role-icon">&#9672;</span><span>Magic Member &mdash; IEEE Smart Village Society</span></div>
+            <div class="role-item"><span class="role-icon">&#9672;</span><span>IEEE Oceanic Engineering Society Member</span></div>
+            <div class="role-item"><span class="role-icon">&#9672;</span><span>Magic Member &mdash; Mathematics Club</span></div>
+            <div class="role-item"><span class="role-icon">&#9672;</span><span>Department Secretary</span></div>
+            <div class="role-item"><span class="role-icon">&#9672;</span><span>Event Coordinator</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 &mdash; Skills</div>
+      <h2 class="section-title reveal">Sharp tools. Sharper thinking.</h2>
+      <p class="section-desc reveal">A growing stack built through shipping real projects, not just tutorials.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Programming Languages</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Python</span><span class="pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Java</span><span class="pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Dev Tools &amp; Technologies</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>HTML / Tailwind CSS / JS</span><span class="pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>React JS / Node JS</span><span class="pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Flask / Render / Vercel</span><span class="pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">AI, Data &amp; Databases</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Deep Learning</span><span class="pct">70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>GIS &amp; Geospatial Analysis</span><span class="pct">65%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="65"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Hugging Face</span><span class="pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>SQL Concepts</span><span class="pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Automation &amp; Collaboration</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>LLM Integration (Groq, MCP)</span><span class="pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="75"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Power BI</span><span class="pct">70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Git &amp; GitHub</span><span class="pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+ <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">03 &mdash; Projects</div>
+      <h2 class="section-title reveal">My Work</h2>
+      <div class="cards-grid">
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/1.png" alt="AI Chatbot Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Water Bodies GIS Intelligence Dashboard</h3>
+            <p class="card-desc">Interactive GIS dashboard for visualizing and analyzing Andhra Pradesh water bodies using GeoJSON datasets, district-wise filtering, clustering, heatmaps, and optimized bulk marker rendering for large-scale spatial analytics.</p>
+            <div class="card-tags"><span>Leaflet</span><span>OpenStreetMap</span><span>OGD Datasets</span><span>GeoJSON</span><span>Heatmaps</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/waterbodies-gis-dashboard" class="btn-card">View Code &#8599;</a>
+              <a href="https://balaji2424-sys.github.io/waterbodies-gis-dashboard/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/2.png" alt="ML Prediction Model Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">LLM MCP Automation Assistant</h3>
+            <p class="card-desc">AI-powered automation assistant integrating Groq Llama models with GitHub and Google Drive MCPs to perform repository and file operations through natural language commands.</p>
+            <div class="card-tags"><span>Groq Llama</span><span>MCP</span><span>GitHub API</span><span>Google Drive API</span><span>Python</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/llm-mcp-demo" class="btn-card">View Code &#8599;</a>
+              <a href="https://balaji2424-sys.github.io/llm-mcp-demo/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+         <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/3.png" alt="Web Application Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Transparent Grievance Management Portal</h3>
+            <p class="card-desc">Secure grievance tracking platform enabling transparent complaint handling, progress monitoring, tracking-ID based privacy, and management-level administrative workflows.</p>
+            <div class="card-tags"><span>NodeJS</span><span>Firebase</span><span>JavaScript</span><span>Tracking System</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/grievance-portal" class="btn-card">View Code &#8599;</a>
+              <a href="https://grievance-portal-frontend-five.vercel.app/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/4.png" alt="Web Application Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Drain Bhavishya 1.0</h3>
+            <p class="card-desc">Conceptual UI and architectural prototype for a smart urban drainage and sustainability management platform, developed as a long-term final year project foundation.</p>
+            <div class="card-tags"><span>React</span><span>UI/UX Design</span><span>Sustainability Analytics</span><span>Vercel</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/drain-bhavishya" class="btn-card">View Code &#8599;</a>
+              <a href="https://drain-bhavishya.vercel.app/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/5.png" alt="Web Application Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Image Compression Autoencoder</h3>
+            <p class="card-desc">Deep learning-based image compression system trained on MNIST datasets using autoencoder architecture with Streamlit-powered local visualization and testing interface.</p>
+            <div class="card-tags"><span>Python</span><span>Auto Encoder</span><span>TensorFlow</span><span>Streamlit</span><span>MNIST</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/image-autoencoder-streamlit" class="btn-card">View Code &#8599;</a>
+              <a href="https://www.linkedin.com/posts/balaji2424-sys_deeplearning-autoencoders-variationalautoencoder-activity-7457311366362607616-ykuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKr5OIBx1YtFmgVto9w3Z0HLm0VxPwU_Z4" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/6.png" alt="Web Application Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Denoising Autoencoder Performance Analysis</h3>
+            <p class="card-desc">Noise reduction deep learning model with comparative performance analysis using PCA and statistical evaluation techniques for image reconstruction optimization.</p>
+            <div class="card-tags"><span>Python</span><span>Auto Encoder</span><span>TensorFlow</span><span>PCA</span><span>Statistical Analysis</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/denoiser-autoencoder-pca" class="btn-card">View Code &#8599;</a>
+              <a href="https://www.linkedin.com/posts/balaji2424-sys_deeplearning-autoencoder-variationalautoencoder-ugcPost-7466763767423602688-oIKG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKr5OIBx1YtFmgVto9w3Z0HLm0VxPwU_Z4" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/7.png" alt="Data Dashboard Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Leaflet Geo Mapping Prototype</h3>
+            <p class="card-desc">Experimental geospatial mapping project built while learning Leaflet, visualizing large-scale Andhra Pradesh water body datasets using GeoJSON bulk marker rendering techniques.</p>
+            <div class="card-tags"><span>JavaScript</span><span>Leaflet</span><span>GeoJSON</span><span>Open Street Maps</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/waterbodies-leaflet-mapping" class="btn-card">View Code &#8599;</a>
+              <a href="https://balaji2424-sys.github.io/waterbodies-leaflet-mapping/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/8.png" alt="Data Dashboard Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Interactive Developer Portfolio</h3>
+            <p class="card-desc">Responsive personal portfolio showcasing projects, leadership activities, downloadable resume, and contact information with smooth animations and modern UI design.</p>
+            <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/balaji-parasuraman-portfolio" class="btn-card">View Code &#8599;</a>
+              <a href="#" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/9.png" alt="Kaadhal Chronicles Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kaadhal Chronicles</h3>
+            <p class="card-desc">Kaadhal Chronicles is a curated cinematic sanctuary dedicated to love, life, dreams, passion, and unforgettable stories. Featuring AI-powered search, personalized recommendations, watchlists, and a unique Soul Analyzer that transforms your viewing history into a personalized Soul Identity Card, helping you discover the stories that truly resonate with your heart.</p>
+            <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Groq API</span><span>Llama 3</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/kaadhal-chronicles" class="btn-card">View Code &#8599;</a>
+              <a href="https://kaadhal-chronicles.web.app/" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-img">
+            <img src="assets/HostelOS.png" alt="HostelOS Project" class="project-thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">HostelOS</h3>
+            <p class="card-desc">
+              HostelOS is an AI-powered Hostel & PG Management System that streamlines room allocation, tenant onboarding, rent collection, electricity billing, complaints, and analytics through a unified platform. Featuring role-based access, AI-powered insights, automated workflows, and intelligent dashboards, it transforms traditional hostel management into a modern, data-driven experience.
+            </p>
+            <div class="card-tags"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>Groq API</span><span>Llama 3</span></div>
+            <div class="card-actions">
+              <a href="https://github.com/Balaji2424-sys/Hostelos" class="btn-card">View Code &#8599;</a>
+              <a href="https://hostelos-five.vercel.app" class="btn-card btn-card-secondary">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- ========== EVENTS ========== -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-label reveal">04 &mdash; Events Organized</div>
+      <h2 class="section-title reveal">Beyond the screen - leading rooms, not just repositories.</h2>
+      <p class="section-desc reveal">Coordination, leadership, and execution at scale across technical and community events.</p>
+
+      <div class="cards-grid">
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e1.png" alt="Technical Symposium Event" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Organizer</span><span class="event-date">2025</span></div>
+            <h3 class="card-title">Lead Organizer - SIT-SCIHUM&rsquo;2025 National Symposium</h3>
+            <p class="card-desc">Led and coordinated a national-level technical symposium with 200+ delegates, managing event operations, team coordination, logistics, promotions, and multi-department collaboration across Sairam Institutions.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; 300+ Participants</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e2.png" alt="Mathematics Club Event" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Symposium Coordinator</span><span class="event-date">2025</span></div>
+            <h3 class="card-title">Department Secretary &amp; FUTURA&rsquo;25 Coordinator</h3>
+            <p class="card-desc">Elected as Department Secretary and successfully organized FUTURA&rsquo;25, overseeing student coordination, departmental activities, and large-scale academic event execution.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Symposium 200+</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e3.png" alt="Department Event Coordination" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Cross-Coordinator Head</span><span class="event-date">2026</span></div>
+            <h3 class="card-title">Cross-Coordinator Head - Data Sprint 3.0</h3>
+            <p class="card-desc">Served as Cross-Coordinator and Design Team Head for an international hackathon, managing cross-functional event flow, branding, and participant engagement initiatives.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Hackathon 100+</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e4.png" alt="IEEE Oceanic Engineering Meet" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Coordinator</span><span class="event-date">2025</span></div>
+            <h3 class="card-title">Head Coordinator - GRITX 8.0</h3>
+            <p class="card-desc">Led the coordination and execution of GRITX 8.0, an NSS mini hackathon focused on innovation, collaboration, and student-driven problem-solving initiatives.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; NSS Chapter</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e5.png" alt="AI Workshop" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Coordinator</span><span class="event-date">2025</span></div>
+            <h3 class="card-title">Coordinator - &ldquo;Think with AI&rdquo; Workshop</h3>
+            <p class="card-desc">Coordinated an AI-focused workshop conducted in collaboration with AICTE and MoE Innovation Cell, emphasizing prompt engineering and effective AI interaction methodologies.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; AICTE Chapter</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e6.png" alt="Mathematics Bootcamp" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Organizer</span><span class="event-date">2026</span></div>
+            <h3 class="card-title">Organizer - Mathematics in AI Bootcamp</h3>
+            <p class="card-desc">Organized a technical bootcamp exploring real-time applications of mathematics in Artificial Intelligence, bridging theoretical concepts with practical AI implementations.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Maths Club</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e7.png" alt="Mathophilia" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Magic Organizer</span><span class="event-date">2026</span></div>
+            <h3 class="card-title">Magic Member - Mathophilia 2026</h3>
+            <p class="card-desc">Contributed to organizing an inter-collegiate mathematics symposium featuring technical sessions, competitions, and collaborative academic engagement initiatives.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Maths Club</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e8.png" alt="DECA AI Workshop" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Organizer</span><span class="event-date">2026</span></div>
+            <h3 class="card-title">Organizer - DECA AI Hands-on Workshop</h3>
+            <p class="card-desc">Organized an online AI bootcamp covering Full Stack Development, Machine Learning, Deep Learning, NLP, Computer Vision, APIs, and real-time project implementation.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Skill Development 40+</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e9.png" alt="Network Defense Session" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Organizer</span><span class="event-date">2026</span></div>
+            <h3 class="card-title">Organizer - Network Defense Strategies Session</h3>
+            <p class="card-desc">Coordinated a cybersecurity guest lecture focused on network defense strategies, simulation-based analysis, and modern security awareness practices.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; Dept. Guest Lecture</span></div>
+          </div>
+        </article>
+
+        <article class="card event-card reveal">
+          <div class="card-img"><img src="assets/e10.png" alt="IEEE Smart Village Society" class="event-thumbnail"></div>
+          <div class="card-body">
+            <div class="event-meta"><span class="event-role">Magic Organizer</span><span class="event-date">2025</span></div>
+            <h3 class="card-title">Magic Member  IEEE Smart Village Society</h3>
+            <p class="card-desc">Served as a Magic Member in IEEE Smart Village Society and coordinated a village-standard project proposal funding awareness and engagement initiative.</p>
+            <div class="event-impact"><span class="impact-badge">&#9650; IEEE SVS Chapter</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-label reveal">05 &mdash; Education</div>
+      <h2 class="section-title reveal">A foundation built across classrooms and curiosity.</h2>
+      <p class="section-desc reveal">From district schools to a tech institution — every chapter added a layer of perspective.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10L12 5l9 5-9 5-9-5Z"/><path d="M6 12v5c0 1 3 2 6 2s6-1 6-2v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-badge">Primary</div>
+                <span class="timeline-level">Up to 7th Std</span>
+                <h3 class="timeline-title">E.S. Matriculation Higher Secondary School</h3>
+                <p class="timeline-sub">Villupuram</p>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/es.png" alt="School logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10L12 5l9 5-9 5-9-5Z"/><path d="M6 12v5c0 1 3 2 6 2s6-1 6-2v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-badge">Secondary</div>
+                <span class="timeline-level">8th &ndash; 10th Std</span>
+                <h3 class="timeline-title">Krishnaswamy Memorial Matriculation Higher Secondary School</h3>
+                <p class="timeline-sub">Cuddalore</p>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/ks.png" alt="School logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10L12 5l9 5-9 5-9-5Z"/><path d="M6 12v5c0 1 3 2 6 2s6-1 6-2v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-badge">Higher Secondary</div>
+                <span class="timeline-level">11th &ndash; 12th Std</span>
+                <h3 class="timeline-title">John Dewey Matriculation Higher Secondary School</h3>
+                <p class="timeline-sub">Villupuram</p>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/jd.png" alt="School logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 4 2 10l10 6 8-4.6V17h2V10Z"/><path d="M6 12.8V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.2"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-badge">B.Tech</div>
+                <span class="timeline-level">Artificial Intelligence &amp; Data Science</span>
+                <h3 class="timeline-title">Sri Sairam Institute of Technology</h3>
+                <p class="timeline-sub">Chennai</p>
+                <span class="timeline-grade">CGPA: 8.7 (up to 4th Semester)</span>
+              </div>
+              <div class="timeline-card-meta">
+                <span class="timeline-years">2024 &ndash; Present</span>
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/sit.png" alt="College logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label reveal">06 &mdash; Experience</div>
+      <h2 class="section-title reveal">A timeline built on real delivery, not just learning.</h2>
+      <p class="section-desc reveal">Internships that shipped real systems. Projects that solved real problems. Growth that didn&rsquo;t wait for permission.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-card-top">
+                  <div class="timeline-badge">Internship</div>
+                  <span class="timeline-years">Jul 10 &ndash; Sep 15, 2025</span>
+                </div>
+                <span class="timeline-level">Web Development Intern</span>
+                <h3 class="timeline-title">Acmegrade Private Limited, Bangalore</h3>
+                <div class="timeline-meta-row">
+                  <p class="timeline-sub">In collaboration with Wipro</p>
+                </div>
+                <ul class="timeline-list">
+                  <li>60-day intensive internship on real-world application development</li>
+                  <li>Strengthened full-stack workflows through guided mentorship</li>
+                  <li>Enhanced technical and project coordination skills in an industry setting</li>
+                </ul>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/acme.png" alt="Company logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-card-top">
+                  <div class="timeline-badge">Internship</div>
+                  <span class="timeline-years">Apr 06 &ndash; May 15, 2026</span>
+                </div>
+                <span class="timeline-level">R&amp;D Intern</span>
+                <h3 class="timeline-title">Sri Sairam Techno Incubator Foundation, Chennai</h3>
+                <ul class="timeline-list">
+                  <li>30-working-day offline R&amp;D internship</li>
+                  <li>Built a GIS-based dashboard &amp; analytical engine for water-sustainable landscape identification</li>
+                  <li>Used MCP servers and LLM workflows, including a Groq LLM-powered chatbot automating GitHub repo + Google Drive folder creation</li>
+                </ul>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/sstf.png" alt="Company logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-card-content">
+                <div class="timeline-card-top">
+                  <div class="timeline-badge">Independent Builder</div>
+                  <span class="timeline-years">Ongoing &ndash; Present</span>
+                </div>
+                <span class="timeline-level">Self-Paced Projects</span>
+                <h3 class="timeline-title">Building independently, outside the classroom</h3>
+                <ul class="timeline-list">
+                  <li>Grievance Management Portal</li>
+                  <li>Autoencoders — deep learning project</li>
+                  <li>Kaadhal Chronicles — bucket list movie tracking website (personal passion project &#10084;)</li>
+                  <li>HostelOS — hostel/PG management system with AI chatbot support</li>
+                </ul>
+              </div>
+              <div class="timeline-card-meta">
+                <div class="timeline-logo-wrapper">
+                  <span class="timeline-logo"><img src="assets/ngp.png" alt="Project logo" loading="lazy"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="timeline-footnote reveal">Open to new opportunities &amp; exciting challenges.</p>
+    </div>
+  </section>
+
+  <!-- ========== GITHUB CONTRIBUTIONS ========== -->
+  <section class="section github" id="github">
+    <div class="container">
+      <div class="section-label reveal">07 &mdash; GitHub Contributions</div>
+      <h2 class="section-title reveal">Code that lives, breathes, and contributes.</h2>
+      <p class="section-desc reveal">Open source activity, consistency, and public commits — because real builders show their work.</p>
+
+      <div class="github-grid reveal">
+        <div class="github-card full-width">
+          <img src="https://ghchart.rshah.org/7C3AED/Balaji2424-sys" alt="GitHub contribution graph" loading="lazy" onerror="ghImgFallback(this,'Contribution graph')">
+        </div>
+        <div class="github-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=Balaji2424-sys&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=7C3AED&icon_color=06B6D4&text_color=9CA3AF&count_private=true" alt="GitHub stats" loading="lazy" onerror="ghImgFallback(this,'GitHub stats')">
+        </div>
+        <div class="github-card">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Balaji2424-sys&theme=dark&hide_border=true&background=0a0a0a&ring=7C3AED&fire=06B6D4&currStreakLabel=7C3AED" alt="GitHub streak stats" loading="lazy" onerror="ghImgFallback(this,'Streak stats')">
+        </div>
+      </div>
+
+      <div class="github-cta reveal">
+        <a href="https://github.com/Balaji2424-sys" target="_blank" rel="noopener" class="btn btn-primary">View GitHub Profile &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PHILOSOPHY ========== -->
+  <section class="section philosophy" id="philosophy">
+    <div class="container">
+      <div class="section-label reveal">08 &mdash; Philosophy</div>
+      <h2 class="section-title reveal">The principles that shape every line I write.</h2>
+      <p class="section-desc reveal">Not rules. Just beliefs that have survived every project so far.</p>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-card reveal">
+          <span class="philosophy-number">01</span>
+          <h3 class="philosophy-title">Simplicity is the most sophisticated engineering.</h3>
+          <p class="philosophy-body">Technology exists to remove friction from people&rsquo;s lives — not to add impressive complexity to them.</p>
+        </div>
+        <div class="philosophy-card reveal">
+          <span class="philosophy-number">02</span>
+          <h3 class="philosophy-title">Shipping is learning accelerated.</h3>
+          <p class="philosophy-body">Great software isn&rsquo;t written in theory. It&rsquo;s refined through real feedback, real users, and real-world edge cases.</p>
+        </div>
+        <div class="philosophy-card reveal">
+          <span class="philosophy-number">03</span>
+          <h3 class="philosophy-title">Stay curious. The market rewards those who never stop learning.</h3>
+          <p class="philosophy-body">The fastest way to become irrelevant is to stop picking up new tools, ideas, and perspectives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">09 &mdash; Contact</div>
+      <h2 class="section-title reveal">Open to what&rsquo;s next.</h2>
+      <p class="contact-sub reveal">Whether it&rsquo;s a collab, an internship, or just a good tech conversation — the door is open.</p>
+      <div class="contact-links reveal">
+
+        <div class="contact-column">
+          <a href="mailto:balajidivya810@gmail.com" class="contact-card">
+            <div class="contact-icon">&#9993;</div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">balajidivya810@gmail.com</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/balaji2424-sys/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon contact-icon-in">in</div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">balaji2424-sys</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+
+          <a href="https://github.com/Balaji2424-sys" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">&#9903;</div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">Balaji2424-sys</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+        </div>
+
+        <div class="contact-column">
+          <a href="https://wa.me/918148909596" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">&#9742;</div>
+            <div class="contact-info">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">+91 81489 09596</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+
+          <a href="https://instagram.com/___r_o_y_a_l__b_a_l_a_j_i___/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">&#9787;</div>
+            <div class="contact-info">
+              <span class="contact-label">Instagram</span>
+              <span class="contact-value">___r_o_y_a_l__b_a_l_a_j_i___</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+
+          <a href="https://leetcode.com/balaji2424-sys/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">&#123;</div>
+            <div class="contact-info">
+              <span class="contact-label">LeetCode</span>
+              <span class="contact-value">balaji2424-sys</span>
+            </div>
+            <span class="contact-arrow">&#8594;</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">BP<span class="dot">.</span></span>
+      <p class="footer-copy">&copy; 2026 Balaji Parasuraman</p>
+      <p class="footer-college">Sri Sairam Institute of Technology</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

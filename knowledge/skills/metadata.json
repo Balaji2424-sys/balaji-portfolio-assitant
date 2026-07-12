@@ -1,0 +1,22 @@
+{
+  "programmingLanguages": [
+    { "name": "Python", "proficiency": 80 },
+    { "name": "Java", "proficiency": 60 }
+  ],
+  "devToolsAndTech": [
+    { "name": "HTML / Tailwind CSS / JS", "proficiency": 80 },
+    { "name": "React JS / Node JS", "proficiency": 60 },
+    { "name": "Flask / Render / Vercel", "proficiency": 60 }
+  ],
+  "aiDataDatabases": [
+    { "name": "Deep Learning", "proficiency": 70 },
+    { "name": "GIS & Geospatial Analysis", "proficiency": 65 },
+    { "name": "Hugging Face", "proficiency": 80 },
+    { "name": "SQL Concepts", "proficiency": 60 }
+  ],
+  "automationAndCollaboration": [
+    { "name": "LLM Integration (Groq, MCP)", "proficiency": 75 },
+    { "name": "Power BI", "proficiency": 70 },
+    { "name": "Git & GitHub", "proficiency": 80 }
+  ]
+}

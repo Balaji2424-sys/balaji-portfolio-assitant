@@ -1,0 +1,16 @@
+{
+  "name": "ai-portfolio-assistant",
+  "version": "1.0.0",
+  "description": "Balaji Parasuraman's AI Portfolio Assistant — a first-person conversational layer over the static portfolio, backed by Groq and a Markdown/JSON knowledge base.",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  }
+}

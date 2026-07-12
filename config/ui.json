@@ -1,0 +1,22 @@
+{
+  "greeting": "Hi! I'm Balaji Parasuraman. Welcome to my portfolio. Feel free to ask me anything about my projects, internships, education, leadership experience, certifications, or technical skills.",
+  "suggestedChips": [
+    { "label": "Tell me about yourself", "question": "Tell me about yourself" },
+    { "label": "My projects", "question": "Show me your projects" },
+    { "label": "Education", "question": "What is your education background?" },
+    { "label": "Internships", "question": "What internships have you done?" },
+    { "label": "Leadership", "question": "Tell me about your leadership experience" },
+    { "label": "Resume", "question": "Can I see your resume?" },
+    { "label": "Contact", "question": "How can I contact you?" }
+  ],
+  "popularActions": [
+    { "label": "View Resume", "action": "VIEW_RESUME" },
+    { "label": "My Projects", "question": "Show me your projects" },
+    { "label": "Internships", "question": "What internships have you done?" },
+    { "label": "IEEE", "question": "Tell me about your IEEE involvement" },
+    { "label": "Certifications", "question": "What certifications do you have?" },
+    { "label": "Contact", "question": "How can I contact you?" }
+  ],
+  "typingIndicatorDelayMs": 200,
+  "maxMessageLength": 800
+}

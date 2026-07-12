@@ -1,0 +1,18 @@
+{
+  "id": "drain-bhavishya",
+  "name": "Drain Bhavishya 1.0",
+  "summary": "Conceptual UI and architectural prototype for a smart urban drainage and sustainability management platform, developed as a long-term final year project foundation.",
+  "techStack": [
+    "React",
+    "UI/UX Design",
+    "Sustainability Analytics",
+    "Vercel"
+  ],
+  "github": "https://github.com/Balaji2424-sys/drain-bhavishya",
+  "demo": "https://drain-bhavishya.vercel.app/",
+  "documents": [],
+  "images": [
+    "assets/4.png"
+  ],
+  "faq": []
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sit-scihum-2025",
+    "title": "Lead Organizer \u2014 SIT-SCIHUM'2025 National Symposium",
+    "role": "Organizer",
+    "year": "2025",
+    "desc": "Led and coordinated a national-level technical symposium with 200+ delegates, managing event operations, team coordination, logistics, promotions, and multi-department collaboration across Sairam Institutions.",
+    "stat": "300+ Participants",
+    "image": "assets/e1.png"
+  },
+  {
+    "id": "futura-25",
+    "title": "Department Secretary & FUTURA'25 Coordinator",
+    "role": "Symposium Coordinator",
+    "year": "2025",
+    "desc": "Elected as Department Secretary and successfully organized FUTURA'25, overseeing student coordination, departmental activities, and large-scale academic event execution.",
+    "stat": "Symposium 200+",
+    "image": "assets/e2.png"
+  },
+  {
+    "id": "data-sprint-3",
+    "title": "Cross-Coordinator Head \u2014 Data Sprint 3.0",
+    "role": "Cross-Coordinator Head",
+    "year": "2026",
+    "desc": "Served as Cross-Coordinator and Design Team Head for an international hackathon, managing cross-functional event flow, branding, and participant engagement initiatives.",
+    "stat": "Hackathon 100+",
+    "image": "assets/e3.png"
+  },
+  {
+    "id": "gritx-8",
+    "title": "Head Coordinator \u2014 GRITX 8.0",
+    "role": "Coordinator",
+    "year": "2025",
+    "desc": "Led the coordination and execution of GRITX 8.0, an NSS mini hackathon focused on innovation, collaboration, and student-driven problem-solving initiatives.",
+    "stat": "NSS Chapter",
+    "image": "assets/e4.png"
+  },
+  {
+    "id": "think-with-ai",
+    "title": "Coordinator \u2014 \u201cThink with AI\u201d Workshop",
+    "role": "Coordinator",
+    "year": "2025",
+    "desc": "Coordinated an AI-focused workshop conducted in collaboration with AICTE and MoE Innovation Cell, emphasizing prompt engineering and effective AI interaction methodologies.",
+    "stat": "AICTE Chapter",
+    "image": "assets/e5.png"
+  },
+  {
+    "id": "maths-in-ai-bootcamp",
+    "title": "Organizer \u2014 Mathematics in AI Bootcamp",
+    "role": "Organizer",
+    "year": "2026",
+    "desc": "Organized a technical bootcamp exploring real-time applications of mathematics in Artificial Intelligence, bridging theoretical concepts with practical AI implementations.",
+    "stat": "Maths Club",
+    "image": "assets/e6.png"
+  },
+  {
+    "id": "mathophilia-2026",
+    "title": "Magic Member \u2014 Mathophilia 2026",
+    "role": "Magic Organizer",
+    "year": "2026",
+    "desc": "Contributed to organizing an inter-collegiate mathematics symposium featuring technical sessions, competitions, and collaborative academic engagement initiatives.",
+    "stat": "Maths Club",
+    "image": "assets/e7.png"
+  },
+  {
+    "id": "deca-ai-workshop",
+    "title": "Organizer \u2014 DECA AI Hands-on Workshop",
+    "role": "Organizer",
+    "year": "2026",
+    "desc": "Organized an online AI bootcamp covering Full Stack Development, Machine Learning, Deep Learning, NLP, Computer Vision, APIs, and real-time project implementation.",
+    "stat": "Skill Development 40+",
+    "image": "assets/e8.png"
+  },
+  {
+    "id": "network-defense-session",
+    "title": "Organizer \u2014 Network Defense Strategies Session",
+    "role": "Organizer",
+    "year": "2026",
+    "desc": "Coordinated a cybersecurity guest lecture focused on network defense strategies, simulation-based analysis, and modern security awareness practices.",
+    "stat": "Dept. Guest Lecture",
+    "image": "assets/e9.png"
+  },
+  {
+    "id": "ieee-svs",
+    "title": "Magic Member \u2014 IEEE Smart Village Society",
+    "role": "Magic Organizer",
+    "year": "2025",
+    "desc": "Served as a Magic Member in IEEE Smart Village Society and coordinated a village-standard project proposal funding awareness and engagement initiative.",
+    "stat": "IEEE SVS Chapter",
+    "image": "assets/e10.png"
+  }
+]

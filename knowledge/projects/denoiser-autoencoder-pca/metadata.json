@@ -1,0 +1,19 @@
+{
+  "id": "denoiser-autoencoder-pca",
+  "name": "Denoising Autoencoder Performance Analysis",
+  "summary": "Noise reduction deep learning model with comparative performance analysis using PCA and statistical evaluation techniques for image reconstruction optimization.",
+  "techStack": [
+    "Python",
+    "Auto Encoder",
+    "TensorFlow",
+    "PCA",
+    "Statistical Analysis"
+  ],
+  "github": "https://github.com/Balaji2424-sys/denoiser-autoencoder-pca",
+  "demo": "https://www.linkedin.com/posts/balaji2424-sys_deeplearning-autoencoder-variationalautoencoder-ugcPost-7466763767423602688-oIKG",
+  "documents": [],
+  "images": [
+    "assets/6.png"
+  ],
+  "faq": []
+}

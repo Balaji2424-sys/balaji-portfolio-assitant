@@ -1,0 +1,32 @@
+{
+  "events": {
+    "title": "Events I've Organized",
+    "images": [
+      { "src": "assets/e1.png", "caption": "SIT-SCIHUM'2025 National Symposium" },
+      { "src": "assets/e2.png", "caption": "FUTURA'25" },
+      { "src": "assets/e3.png", "caption": "Data Sprint 3.0" },
+      { "src": "assets/e4.png", "caption": "GRITX 8.0" },
+      { "src": "assets/e5.png", "caption": "Think with AI Workshop" },
+      { "src": "assets/e6.png", "caption": "Mathematics in AI Bootcamp" },
+      { "src": "assets/e7.png", "caption": "Mathophilia 2026" },
+      { "src": "assets/e8.png", "caption": "DECA AI Hands-on Workshop" },
+      { "src": "assets/e9.png", "caption": "Network Defense Strategies Session" },
+      { "src": "assets/e10.png", "caption": "IEEE Smart Village Society" }
+    ]
+  },
+  "projects": {
+    "title": "Project Screenshots",
+    "images": [
+      { "src": "assets/1.png", "caption": "Water Bodies GIS Intelligence Dashboard" },
+      { "src": "assets/2.png", "caption": "LLM MCP Automation Assistant" },
+      { "src": "assets/3.png", "caption": "Transparent Grievance Management Portal" },
+      { "src": "assets/4.png", "caption": "Drain Bhavishya 1.0" },
+      { "src": "assets/5.png", "caption": "Image Compression Autoencoder" },
+      { "src": "assets/6.png", "caption": "Denoising Autoencoder Performance Analysis" },
+      { "src": "assets/7.png", "caption": "Leaflet Geo Mapping Prototype" },
+      { "src": "assets/8.png", "caption": "Interactive Developer Portfolio" },
+      { "src": "assets/9.png", "caption": "Kaadhal Chronicles" },
+      { "src": "assets/HostelOS.png", "caption": "HostelOS" }
+    ]
+  }
+}

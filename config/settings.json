@@ -1,0 +1,8 @@
+{
+  "assistantName": "Balaji's AI Portfolio Assistant",
+  "systemPromptVersion": "v1",
+  "maxContextTokens": 8000,
+  "maxHistoryMessages": 12,
+  "modes": ["recruiter", "visitor"],
+  "defaultMode": "visitor"
+}

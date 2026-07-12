@@ -1,0 +1,18 @@
+{
+  "id": "grievance-management-portal",
+  "name": "Transparent Grievance Management Portal",
+  "summary": "Secure grievance tracking platform enabling transparent complaint handling, progress monitoring, tracking-ID based privacy, and management-level administrative workflows.",
+  "techStack": [
+    "NodeJS",
+    "Firebase",
+    "JavaScript",
+    "Tracking System"
+  ],
+  "github": "https://github.com/Balaji2424-sys/grievance-portal",
+  "demo": "https://grievance-portal-frontend-five.vercel.app/",
+  "documents": [],
+  "images": [
+    "assets/3.png"
+  ],
+  "faq": []
+}
