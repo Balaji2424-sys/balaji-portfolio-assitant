@@ -12,7 +12,7 @@
   "demo": "https://grievance-portal-frontend-five.vercel.app/",
   "documents": [],
   "images": [
-    "assets/3.png"
+    "public/assets/thumbnails/3.png"
   ],
   "faq": []
 }

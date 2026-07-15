@@ -10,8 +10,14 @@
         "Strengthened full-stack workflows through guided mentorship",
         "Enhanced technical and project coordination skills in an industry setting"
       ],
-      "offerLetter": null,
-      "certificate": null
+      "offerLetter": {
+        "title": "Internship Offer Letter",
+        "pdf": "NONE"
+      },
+      "certificate": {
+        "title": "Internship Completion Certificate",
+        "pdf": "public/documents/internship/acme-completion.pdf"
+      }
     },
     {
       "id": "sstf-rd-intern",
@@ -23,9 +29,14 @@
         "Built a GIS-based dashboard & analytical engine for water-sustainable landscape identification",
         "Used MCP servers and LLM workflows, including a Groq LLM-powered chatbot automating GitHub repo + Google Drive folder creation"
       ],
-      "offerLetter": null,
-      "certificate": null
+      "offerLetter": {
+        "title": "Internship Offer Letter",
+        "pdf": "public/documents/internship/sstif.pdf"
+      },
+      "certificate": {
+        "title": "Internship Completion Certificate",
+        "pdf": "NONE"
+      }
     }
-  ],
-  "_note": "offerLetter/certificate document paths intentionally null until real PDFs are supplied — do not fabricate."
+  ]
 }

@@ -11,13 +11,13 @@ I'm Balaji Parasuraman, an Artificial Intelligence and Data Science student at S
 
 ## Where I come from
 
-I grew up in Valavanur, in Villupuram District, and did my early schooling at E.S. Matriculation Higher Secondary School in Villupuram. My first real brush with building something from scratch came in grades 10 and 11, through an inter-school project with Krishnaswamy Memorial Higher Secondary School, Cuddalore — we built a Student Database Management System with support from my school. That same team went on to compete in an Innovathon at Sri Manakula Vinayagar Engineering College in Madhugadipattu, Pondicherry, and at IFET Engineering College in Villupuram. That was the first time I really understood what it felt like to build something with a team, under pressure, and see it actually work.
+I grew up in Valavanur, in Villupuram District, and did my early schooling at E.S. Matriculation Higher Secondary School in Villupuram. My first real brush with building something from scratch came in grades 10 and 11, through an inter-school project with Krishnaswamy Memorial Higher Secondary School, Cuddalore - we built a Student Database Management System with support from my school. That same team went on to compete in an Innovathon at Sri Manakula Vinayagar Engineering College in Madhugadipattu, Pondicherry, and at IFET Engineering College in Villupuram. That was the first time I really understood what it felt like to build something with a team, under pressure, and see it actually work.
 
-By the time I got to John Dewey Matriculation Higher Secondary School in Villupuram for 11th and 12th, I was spending most of my time in the lab rather than the classroom — that's where things really clicked for me.
+By the time I got to John Dewey Matriculation Higher Secondary School in Villupuram for 11th and 12th, I was spending most of my time in the lab rather than the classroom - that's where things really clicked for me.
 
 ## How I got into AI & Data Science
 
-It wasn't one single moment — it grew through curiosity and hands-on building. I realized early that I enjoy solving practical problems far more than just studying theory. As I explored programming and software development, I became increasingly interested in how AI, full-stack development, and data can work together to solve real-world challenges.
+It wasn't one single moment - it grew through curiosity and hands-on building. I realized early that I enjoy solving practical problems far more than just studying theory. As I explored programming and software development, I became increasingly interested in how AI, full-stack development, and data can work together to solve real-world challenges.
 
 At Sri Sairam Institute of Technology, I've intentionally focused on project-based learning — hackathons, internships, IEEE activities, leadership roles, and independent projects, instead of limiting myself to coursework. My interests have gradually expanded from web development into AI-assisted applications, GIS-based systems, intelligent automation, and full-stack engineering, which continues to shape what I build today.
 

@@ -146,6 +146,7 @@
 
   function togglePreviewPanel() {
     const layout = document.getElementById('aiLayout');
+    if (global.matchMedia('(max-width: 640px)').matches && !layout?.classList.contains('has-preview')) return;
     if (layout?.classList.contains('preview-hidden')) {
       openPreviewPanel();
     } else {
@@ -160,6 +161,10 @@
     const resizer = document.getElementById('panelResizer');
     const layout = document.getElementById('aiLayout');
     if (!resizer || !layout) return;
+
+    if (global.matchMedia('(max-width: 640px)').matches) {
+      closePreviewPanel();
+    }
 
     let dragging = false;
 

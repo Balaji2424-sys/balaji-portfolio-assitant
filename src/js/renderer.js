@@ -182,6 +182,7 @@
     }
     slot.innerHTML = render(payload);
     wireViewMoreToggles(slot);
+    document.getElementById('aiLayout')?.classList.add('has-preview');
     global.APAI.ui?.openPreviewPanel?.();
   }
 
@@ -193,6 +194,7 @@
     const slot = document.getElementById('previewSlot');
     if (!slot) return;
     slot.innerHTML = documentPreview(url, label);
+    document.getElementById('aiLayout')?.classList.add('has-preview');
     global.APAI.ui?.openPreviewPanel?.();
   }
 

@@ -14,7 +14,7 @@
   "demo": "https://hostelos-five.vercel.app",
   "documents": [],
   "images": [
-    "assets/HostelOS.png"
+    "public/assets/thumbnails/HostelOS.png"
   ],
   "faq": []
 }

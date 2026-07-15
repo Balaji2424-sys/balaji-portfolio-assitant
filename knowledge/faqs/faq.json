@@ -36,6 +36,6 @@
   "Can I see your resume?": "resume",
   "Download my resume": "resume",
 
-  "Show me the gallery": "gallery",
-  "Show me event photos": "gallery"
+  "Show me the gallery": "thumbnails",
+  "Show me event photos": "thumbnails"
 }

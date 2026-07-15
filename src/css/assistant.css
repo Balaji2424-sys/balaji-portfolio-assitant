@@ -564,8 +564,29 @@
   .ai-resizer { display: none; }
 }
 @media (max-width: 640px) {
+  .ai-shell { min-height: 100svh; }
+  .ai-panel-left { display: none; }
+  .ai-conversation {
+    order: 1;
+    min-height: calc(100svh - 56px);
+  }
+  .ai-floating-avatar { padding: 28px 16px 8px; }
   .ai-messages { padding: 8px 16px 16px; }
   .ai-message { max-width: 88%; }
   .ai-input-bar { padding: 10px 16px 16px; }
   .ai-quicknav { padding: 8px 16px 0; }
+  .ai-panel-right {
+    display: none;
+    position: fixed;
+    inset: 68px 12px 84px;
+    z-index: 40;
+    max-height: none;
+    padding: 16px;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    background: var(--clr-bg);
+    box-shadow: 0 18px 60px rgba(0,0,0,.42);
+  }
+  .ai-layout.has-preview:not(.preview-hidden) .ai-panel-right { display: block; }
+  .ai-doc-preview iframe { height: min(56svh, 420px); }
 }
