@@ -25,6 +25,49 @@
       "location": "Villupuram"
     }
   ],
-  "documents": [],
-  "_note": "Subject-wise marksheets not yet supplied — documents array intentionally empty until provided. Do not fabricate marksheet documents."
+  "documents": [
+    {
+      "id": "marksheet_10",
+      "title": "SSLC Marksheet",
+      "category": "marksheet",
+      "stage": "Secondary",
+      "description": "SSLC marksheet available from the repository.",
+      "path": "public/documents/marksheets/SSLC Marksheet.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/marksheets/SSLC Marksheet.pdf",
+      "view": "VIEW_MARKSHEET_10",
+      "download": "DOWNLOAD_MARKSHEET_10",
+      "relatedKnowledge": ["education"],
+      "tags": ["marksheet", "sslc", "class 10"]
+    },
+    {
+      "id": "marksheet_11",
+      "title": "Higher Secondary Marksheet (Class XI)",
+      "category": "marksheet",
+      "stage": "Higher Secondary",
+      "description": "Higher secondary marksheet available from the repository for the class XI academic record.",
+      "path": "public/documents/marksheets/HSC Marksheet.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/marksheets/HSC Marksheet.pdf",
+      "view": "VIEW_MARKSHEET_11",
+      "download": "DOWNLOAD_MARKSHEET_11",
+      "relatedKnowledge": ["education"],
+      "tags": ["marksheet", "hsc", "class 11"]
+    },
+    {
+      "id": "marksheet_12",
+      "title": "Higher Secondary Marksheet (Class XII)",
+      "category": "marksheet",
+      "stage": "Higher Secondary",
+      "description": "Higher secondary marksheet available from the repository for the class XII academic record.",
+      "path": "public/documents/marksheets/HSC Marksheet.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/marksheets/HSC Marksheet.pdf",
+      "view": "VIEW_MARKSHEET_12",
+      "download": "DOWNLOAD_MARKSHEET_12",
+      "relatedKnowledge": ["education"],
+      "tags": ["marksheet", "hsc", "class 12"]
+    }
+  ],
+  "_note": "Educational marksheet documents now reflect the PDFs present in the repository."
 }

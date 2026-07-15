@@ -11,7 +11,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/waterbodies-gis-dashboard",
   "demo": "https://balaji2424-sys.github.io/waterbodies-gis-dashboard/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/waterbodies-gis-dashboard.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/1.png"
   ],

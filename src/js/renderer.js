@@ -100,29 +100,46 @@
     });
   }
 
+  function resolveDocTarget(doc) {
+    if (!doc) return null;
+    if (typeof doc === 'string') return doc;
+    if (typeof doc === 'object') return doc.pdf || doc.path || null;
+    return null;
+  }
+
+  function resolveDocLabel(doc, fallback) {
+    if (!doc) return fallback;
+    if (typeof doc === 'string') return fallback;
+    if (typeof doc === 'object') return doc.title || fallback;
+    return fallback;
+  }
+
   function certificateCard(c) {
+    const certTarget = resolveDocTarget(c.certificate);
     return `
       <article class="ai-project-card">
         <div class="ai-project-card-body">
           <div class="ai-project-card-title-overlay" style="position:static;color:var(--clr-text);margin-bottom:4px;">${escapeHtml(c.course || 'Certificate')}</div>
           <p class="ai-project-card-desc">${escapeHtml(c.issuer || '')}${c.score ? ` &middot; Score: ${escapeHtml(c.score)}` : ''}</p>
           <div class="ai-message-actions">
-            ${c.certificate ? `<button class="ai-action-btn primary" data-action-type="VIEW_CERTIFICATE" data-target="${escapeHtml(c.certificate)}">View</button>` : ''}
-            ${c.certificate ? `<button class="ai-action-btn" data-action-type="DOWNLOAD_CERTIFICATE" data-target="${escapeHtml(c.certificate)}">Download</button>` : ''}
+            ${certTarget ? `<button class="ai-action-btn primary" data-action-type="VIEW_CERTIFICATE" data-target="${escapeHtml(certTarget)}">View</button>` : ''}
+            ${certTarget ? `<button class="ai-action-btn" data-action-type="DOWNLOAD_CERTIFICATE" data-target="${escapeHtml(certTarget)}">Download</button>` : ''}
           </div>
         </div>
       </article>`;
   }
 
   function internshipCard(i) {
+    const offerTarget = resolveDocTarget(i.offerLetter);
+    const certTarget = resolveDocTarget(i.certificate);
     return `
       <article class="ai-project-card">
         <div class="ai-project-card-body">
           <div class="ai-project-card-title-overlay" style="position:static;color:var(--clr-text);margin-bottom:4px;">${escapeHtml(i.role || 'Internship')}</div>
           <p class="ai-project-card-desc">${escapeHtml(i.organization || '')}${i.duration ? ` &middot; ${escapeHtml(i.duration)}` : ''}</p>
           <div class="ai-message-actions">
-            ${i.offerLetter ? `<button class="ai-action-btn" data-action-type="VIEW_INTERNSHIP_LETTER" data-target="${escapeHtml(i.offerLetter)}">Offer Letter</button>` : ''}
-            ${i.certificate ? `<button class="ai-action-btn" data-action-type="VIEW_CERTIFICATE" data-target="${escapeHtml(i.certificate)}">Certificate</button>` : ''}
+            ${offerTarget ? `<button class="ai-action-btn" data-action-type="VIEW_INTERNSHIP_OFFER" data-target="${escapeHtml(offerTarget)}">Offer Letter</button>` : ''}
+            ${certTarget ? `<button class="ai-action-btn" data-action-type="VIEW_INTERNSHIP_CERTIFICATE" data-target="${escapeHtml(certTarget)}">Certificate</button>` : ''}
           </div>
         </div>
       </article>`;

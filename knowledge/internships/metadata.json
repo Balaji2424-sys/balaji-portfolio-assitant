@@ -12,7 +12,7 @@
       ],
       "offerLetter": {
         "title": "Internship Offer Letter",
-        "pdf": "NONE"
+        "pdf": null
       },
       "certificate": {
         "title": "Internship Completion Certificate",
@@ -35,7 +35,7 @@
       },
       "certificate": {
         "title": "Internship Completion Certificate",
-        "pdf": "NONE"
+        "pdf": null
       }
     }
   ]

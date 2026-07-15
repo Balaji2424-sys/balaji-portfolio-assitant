@@ -11,7 +11,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/image-autoencoder-streamlit",
   "demo": "https://www.linkedin.com/posts/balaji2424-sys_deeplearning-autoencoders-variationalautoencoder-activity-7457311366362607616-ykuu",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/image-autoencoder-streamlit.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/5.png"
   ],

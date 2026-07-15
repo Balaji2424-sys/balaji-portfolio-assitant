@@ -10,7 +10,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/drain-bhavishya",
   "demo": "https://drain-bhavishya.vercel.app/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/drain-bhavishya.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/4.png"
   ],

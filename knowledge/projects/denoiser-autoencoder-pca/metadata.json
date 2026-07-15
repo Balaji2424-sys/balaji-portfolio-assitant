@@ -11,7 +11,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/denoiser-autoencoder-pca",
   "demo": "https://www.linkedin.com/posts/balaji2424-sys_deeplearning-autoencoder-variationalautoencoder-ugcPost-7466763767423602688-oIKG",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/denoiser-autoencoder-pca.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/6.png"
   ],

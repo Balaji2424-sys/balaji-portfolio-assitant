@@ -1,6 +1,8 @@
 {
   "events": {
+    "id": "events",
     "title": "Events I've Organized",
+    "description": "Photos from workshops, symposiums, and community events.",
     "images": [
       { "src": "public/assets/thumbnails/e1.png", "caption": "SIT-SCIHUM'2025 National Symposium" },
       { "src": "public/assets/thumbnails/e2.png", "caption": "FUTURA'25" },
@@ -15,7 +17,9 @@
     ]
   },
   "projects": {
+    "id": "projects",
     "title": "Project Screenshots",
+    "description": "Screenshots from the major projects in the portfolio.",
     "images": [
       { "src": "public/assets/thumbnails/1.png", "caption": "Water Bodies GIS Intelligence Dashboard" },
       { "src": "public/assets/thumbnails/2.png", "caption": "LLM MCP Automation Assistant" },

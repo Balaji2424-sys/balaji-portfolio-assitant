@@ -11,7 +11,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/kaadhal-chronicles",
   "demo": "https://kaadhal-chronicles.web.app/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/kaadhal-chronicles.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/9.png"
   ],

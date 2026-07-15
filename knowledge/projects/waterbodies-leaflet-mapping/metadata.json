@@ -10,7 +10,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/waterbodies-leaflet-mapping",
   "demo": "https://balaji2424-sys.github.io/waterbodies-leaflet-mapping/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/waterbodies-leaflet-mapping.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/7.png"
   ],

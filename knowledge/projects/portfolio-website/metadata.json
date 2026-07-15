@@ -9,7 +9,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/balaji-parasuraman-portfolio",
   "demo": null,
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Overview",
+      "path": "public/documents/resume/resume.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/8.png"
   ],

@@ -11,7 +11,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/llm-mcp-demo",
   "demo": "https://balaji2424-sys.github.io/llm-mcp-demo/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/llm-mcp-automation-assistant.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/2.png"
   ],

@@ -10,7 +10,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/grievance-portal",
   "demo": "https://grievance-portal-frontend-five.vercel.app/",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/grievance-management-portal.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/3.png"
   ],

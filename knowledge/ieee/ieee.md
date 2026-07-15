@@ -28,8 +28,8 @@ I'm an active **IEEE Student Member** with **Membership ID: 100596509**, activel
 
 You can view or download my official IEEE Membership ID Card using the links below.
 
-- **View Membership Card:** public/documents/ieee/IEEE MEMBERSHIP CARD.pdf
-- **Download Membership Card:** public/documents/ieee/IEEE MEMEBERSHIP CARD.pdf
+- **View Membership Card:** public/documents/ieee/IEEE MEMBERSHIP CARD .pdf
+- **Download Membership Card:** public/documents/ieee/IEEE MEMBERSHIP CARD .pdf
 
 ### IEEE Society Memberships
 

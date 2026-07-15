@@ -1,10 +1,134 @@
 {
   "resume_latest": {
     "title": "Resume — Balaji Parasuraman",
+    "description": "Latest resume PDF for Balaji Parasuraman.",
     "category": "resume",
     "path": "public/documents/resume/resume.pdf",
     "thumbnail": null,
-    "downloadable": true
+    "preview": "public/documents/resume/resume.pdf",
+    "view": "VIEW_RESUME",
+    "download": "DOWNLOAD_RESUME",
+    "relatedKnowledge": ["about", "contact", "education"],
+    "tags": ["resume", "cv", "portfolio"]
   },
-  "_note": "Marksheet, certificate, and internship-letter documents are intentionally absent until real PDFs are supplied. VIEW_/DOWNLOAD_ actions for those should resolve to 'unavailable' rather than a fabricated path."
+  "marksheet_10": {
+    "title": "SSLC Marksheet",
+    "description": "SSLC marksheet available from the repository.",
+    "category": "marksheet",
+    "path": "public/documents/marksheets/SSLC Marksheet.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/marksheets/SSLC Marksheet.pdf",
+    "view": "VIEW_MARKSHEET_10",
+    "download": "DOWNLOAD_MARKSHEET_10",
+    "relatedKnowledge": ["education"],
+    "tags": ["marksheet", "sslc", "class 10"]
+  },
+  "marksheet_11": {
+    "title": "Higher Secondary Marksheet (Class XI)",
+    "description": "Higher secondary marksheet showing the class XI academic record.",
+    "category": "marksheet",
+    "path": "public/documents/marksheets/HSC Marksheet.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/marksheets/HSC Marksheet.pdf",
+    "view": "VIEW_MARKSHEET_11",
+    "download": "DOWNLOAD_MARKSHEET_11",
+    "relatedKnowledge": ["education"],
+    "tags": ["marksheet", "hsc", "class 11"]
+  },
+  "marksheet_12": {
+    "title": "Higher Secondary Marksheet (Class XII)",
+    "description": "Higher secondary marksheet showing the class XII academic record.",
+    "category": "marksheet",
+    "path": "public/documents/marksheets/HSC Marksheet.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/marksheets/HSC Marksheet.pdf",
+    "view": "VIEW_MARKSHEET_12",
+    "download": "DOWNLOAD_MARKSHEET_12",
+    "relatedKnowledge": ["education"],
+    "tags": ["marksheet", "hsc", "class 12"]
+  },
+  "internship_offer_sstf": {
+    "title": "Internship Offer Letter",
+    "description": "Offer letter for the Sri Sairam Techno Incubator Foundation internship.",
+    "category": "internship",
+    "path": "public/documents/internship/sstif.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/internship/sstif.pdf",
+    "view": "VIEW_INTERNSHIP_OFFER",
+    "download": "DOWNLOAD_INTERNSHIP_OFFER",
+    "relatedKnowledge": ["internships", "experience"],
+    "tags": ["internship", "offer letter", "sstf"]
+  },
+  "internship_certificate_acme": {
+    "title": "Internship Completion Certificate",
+    "description": "Completion certificate for the Acmegrade internship.",
+    "category": "internship",
+    "path": "public/documents/internship/acme-completion.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/internship/acme-completion.pdf",
+    "view": "VIEW_INTERNSHIP_CERTIFICATE",
+    "download": "DOWNLOAD_INTERNSHIP_CERTIFICATE",
+    "relatedKnowledge": ["internships", "experience"],
+    "tags": ["internship", "certificate", "acmegrade"]
+  },
+  "ieee_card": {
+    "title": "IEEE Membership Card",
+    "description": "IEEE membership card and identification document.",
+    "category": "ieee",
+    "path": "public/documents/ieee/IEEE MEMBERSHIP CARD .pdf",
+    "thumbnail": null,
+    "preview": "public/documents/ieee/IEEE MEMBERSHIP CARD .pdf",
+    "view": "VIEW_IEEE_CARD",
+    "download": "DOWNLOAD_IEEE_CARD",
+    "relatedKnowledge": ["ieee", "leadership"],
+    "tags": ["ieee", "membership", "card"]
+  },
+  "ieee_societies": {
+    "title": "IEEE Society Memberships",
+    "description": "IEEE society memberships and renewal proof document.",
+    "category": "ieee",
+    "path": "public/documents/ieee/IEEE renewal proof.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/ieee/IEEE renewal proof.pdf",
+    "view": "VIEW_IEEE_SOCIETIES",
+    "download": "DOWNLOAD_IEEE_SOCIETIES",
+    "relatedKnowledge": ["ieee", "leadership"],
+    "tags": ["ieee", "societies", "renewal"]
+  },
+  "certificate_ai_for_all": {
+    "title": "AI for All: From Basics to GenAI Practice",
+    "description": "Certificate for the AI for All course covering generative AI fundamentals.",
+    "category": "certificate",
+    "path": "public/documents/certifications/AI for All From Basics to GenAI Practice.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/certifications/AI for All From Basics to GenAI Practice.pdf",
+    "view": "VIEW_CERTIFICATE",
+    "download": "DOWNLOAD_CERTIFICATE",
+    "relatedKnowledge": ["certifications", "skills"],
+    "tags": ["certificate", "ai", "genai"]
+  },
+  "certificate_python": {
+    "title": "Python Programming Master Class",
+    "description": "Certificate for the Python Programming Master Class.",
+    "category": "certificate",
+    "path": "public/documents/certifications/Python Programming Master Class.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/certifications/Python Programming Master Class.pdf",
+    "view": "VIEW_CERTIFICATE",
+    "download": "DOWNLOAD_CERTIFICATE",
+    "relatedKnowledge": ["certifications", "skills"],
+    "tags": ["certificate", "python", "programming"]
+  },
+  "certificate_ieee_humanitarian": {
+    "title": "IEEE Humanitarian Course",
+    "description": "Certificate for the IEEE humanitarian course.",
+    "category": "certificate",
+    "path": "public/documents/certifications/IEEE Humanitarian Course.pdf",
+    "thumbnail": null,
+    "preview": "public/documents/certifications/IEEE Humanitarian Course.pdf",
+    "view": "VIEW_CERTIFICATE",
+    "download": "DOWNLOAD_CERTIFICATE",
+    "relatedKnowledge": ["certifications", "ieee"],
+    "tags": ["certificate", "ieee", "humanitarian"]
+  }
 }

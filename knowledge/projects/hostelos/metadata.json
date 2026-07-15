@@ -12,7 +12,12 @@
   ],
   "github": "https://github.com/Balaji2424-sys/Hostelos",
   "demo": "https://hostelos-five.vercel.app",
-  "documents": [],
+  "documents": [
+    {
+      "title": "Project Report",
+      "path": "public/documents/project-reports/hostelos.pdf"
+    }
+  ],
   "images": [
     "public/assets/thumbnails/HostelOS.png"
   ],

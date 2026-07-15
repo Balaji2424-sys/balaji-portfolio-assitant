@@ -1,4 +1,47 @@
 {
-  "certificates": [],
-  "_note": "No certificates supplied yet. Do not fabricate entries here — leave empty until real certificate data/PDFs are provided."
+  "certificates": [
+    {
+      "id": "certificate_ai_for_all",
+      "title": "AI for All: From Basics to GenAI Practice",
+      "category": "certificate",
+      "issuer": "AI for All",
+      "description": "Certificate for the AI for All course covering foundations of Generative AI and LLMs.",
+      "path": "public/documents/certifications/AI for All From Basics to GenAI Practice.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/certifications/AI for All From Basics to GenAI Practice.pdf",
+      "view": "VIEW_CERTIFICATE",
+      "download": "DOWNLOAD_CERTIFICATE",
+      "relatedKnowledge": ["certifications", "skills"],
+      "tags": ["certificate", "ai", "genai", "llm"]
+    },
+    {
+      "id": "certificate_python",
+      "title": "Python Programming Master Class",
+      "category": "certificate",
+      "issuer": "Python Programming Master Class",
+      "description": "Certificate for the Python programming master class covering fundamentals and practical development.",
+      "path": "public/documents/certifications/Python Programming Master Class.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/certifications/Python Programming Master Class.pdf",
+      "view": "VIEW_CERTIFICATE",
+      "download": "DOWNLOAD_CERTIFICATE",
+      "relatedKnowledge": ["certifications", "skills"],
+      "tags": ["certificate", "python", "programming"]
+    },
+    {
+      "id": "certificate_ieee_humanitarian",
+      "title": "IEEE Humanitarian Course",
+      "category": "certificate",
+      "issuer": "IEEE",
+      "description": "Certificate for the IEEE humanitarian course focused on community-centered technology and sustainable solutions.",
+      "path": "public/documents/certifications/IEEE Humanitarian Course.pdf",
+      "thumbnail": null,
+      "preview": "public/documents/certifications/IEEE Humanitarian Course.pdf",
+      "view": "VIEW_CERTIFICATE",
+      "download": "DOWNLOAD_CERTIFICATE",
+      "relatedKnowledge": ["certifications", "ieee"],
+      "tags": ["certificate", "ieee", "humanitarian"]
+    }
+  ],
+  "_note": "Certificate documents now reflect the PDFs present in the repository."
 }
