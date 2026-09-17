@@ -287,19 +287,27 @@ async function callGroq({ systemPrompt, knowledgeContext, history, message }) {
     { role: 'user', content: message },
   ];
 
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model,
-      messages,
-      temperature: 0.4,
-      response_format: { type: 'json_object' },
-    }),
-  });
+  const endpoint = 'https://api.groq.com/openai/v1/chat/completions';
+  const request = (requestModel, useJsonMode) =>
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: requestModel,
+        messages,
+        temperature: 0.4,
+        ...(useJsonMode ? { response_format: { type: 'json_object' } } : {}),
+      }),
+    });
+
+  let res = await request(model, true);
+  if (!res.ok && (res.status === 400 || res.status === 404)) {
+    await res.text().catch(() => '');
+    res = await request('llama-3.3-70b-versatile', false);
+  }
 
   if (!res.ok) {
     const text = await res.text().catch(() => '');
