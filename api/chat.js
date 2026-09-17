@@ -308,6 +308,10 @@ async function callGroq({ systemPrompt, knowledgeContext, history, message }) {
     await res.text().catch(() => '');
     res = await request('llama-3.3-70b-versatile', false);
   }
+  if (!res.ok && (res.status === 400 || res.status === 404) && model !== 'llama-3.1-8b-instant') {
+    await res.text().catch(() => '');
+    res = await request('llama-3.1-8b-instant', false);
+  }
 
   if (!res.ok) {
     const text = await res.text().catch(() => '');
