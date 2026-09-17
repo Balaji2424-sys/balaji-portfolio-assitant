@@ -262,7 +262,7 @@ function truncateToTokenBudget(text, maxTokens) {
 }
 
 async function callGroq({ systemPrompt, knowledgeContext, history, message }) {
-  const apiKey = process.env.GROQ_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY?.trim();
   const model = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
   const maxTokens = parseInt(process.env.MAX_CONTEXT_TOKENS, 10) || 8000;
   knowledgeContext = truncateToTokenBudget(knowledgeContext, maxTokens * 0.7); // leave room for system/personality/history
@@ -275,9 +275,15 @@ async function callGroq({ systemPrompt, knowledgeContext, history, message }) {
     throw err;
   }
 
+  const priorHistory = Array.isArray(history)
+    ? history
+        .slice(-12)
+        .filter((item) => !(item?.role === 'user' && item?.content === message))
+    : [];
+
   const messages = [
     { role: 'system', content: `${systemPrompt}\n\nKnowledge context:\n${knowledgeContext}` },
-    ...(Array.isArray(history) ? history.slice(-12) : []),
+    ...priorHistory,
     { role: 'user', content: message },
   ];
 
@@ -307,9 +313,12 @@ async function callGroq({ systemPrompt, knowledgeContext, history, message }) {
   try {
     parsed = JSON.parse(raw);
   } catch {
-    // Model didn't return valid JSON — degrade to plain text, no actions,
-    // rather than surfacing a broken response to the user.
-    parsed = { message: raw, actions: [] };
+    const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)\s*```/i)?.[1];
+    try {
+      parsed = fenced ? JSON.parse(fenced) : { message: raw, actions: [] };
+    } catch {
+      parsed = { message: raw, actions: [] };
+    }
   }
 
   return {
